@@ -1,4 +1,4 @@
-#student management
+#student data management
 num = int(input('how many. ')) 
 database = []
 
