@@ -20,8 +20,33 @@ def calculate_result():
 #3 keys
 for i in range(num):
     name = input('ENTER YOUR NAME: ')
+    if name == "":
+        print("try again")
+    else:
+        try:
+            check1 = int(name)
+            print("letters only. ")
+        except ValueError:
+            print("--------------------")
     dep = input('what department? ')
+    if dep == "":
+        print("try again.")
+    else:
+        try:
+            check2 = int(dep)
+            print("do not enter numbers")
+        except ValueError:
+            print("--------------------")
     mark = int(input('what is your mark? '))
+    if mark == "":
+        print("try again.")
+    else:
+        try:
+            check3 = int(mark)
+            print("--------------------")
+        except ValueError:
+            print("enter a number only")
+
     addstudent(name, dep, mark)    
 
 calculate_result()
